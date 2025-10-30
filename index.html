@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Peter</title>
+    <script src="https://kit.fontawesome.com/c4993cb090.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="font-instrument">
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <header class="flex items-center justify-between py-2">
+            <div class="">
+                <h1 class="text-[17px] font-medium text-[#111111]">
+                    Joseph Peter
+                </h1>
+            </div>
+            <div class="hidden lg:block justify-center">
+                <nav>
+                    <ul class="flex space-x-6 text-lg font-medium text-[#111111]">
+                        <li>
+                            <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">About</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">Internships</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">Activities</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">Interest</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="hidden lg:flex items-center gap-x-2">
+                <button class="rounded-xl flex items-center gap-x-2 py-2 px-3 text-[13.33px] font-medium bg-[linear-gradient(to_right,#304DF5_50%,#9016F4_100%)] text-white hover:opacity-90">
+                    Download Resume <span><i class="fa-solid fa-download"></i></span>
+                </button>
+            </div>
+            <div class="sm:block lg:hidden" x-data="{ open: false }">
+                <button 
+                    @click="open = !open"
+                    class="text-gray-700 hover:text-blue-600 focus:outline-none"
+                >
+                <img src="Hamburger_icon.svg" alt="">  
+                </button>
+
+
+                <div 
+                    x-show="open"
+                    x-transition
+                    class="absolute top-16 left-0 w-full bg-white z-10 shadow-md flex flex-col space-y-2 px-6 py-4 lg:hidden"
+                        >
+                    <nav>
+                            <ul class="flex flex-col text-lg font-medium text-[#111111]">
+                                <li>
+                                    <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">About</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">Projects</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">Internships</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">Skills</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">Activities</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">Interest</a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <div class="md:hidden">
+                            <button class="rounded-xl flex items-center gap-x-2 py-2 px-3 text-[13.33px] font-medium bg-[linear-gradient(to_right,#304DF5_50%,#9016F4_100%)] text-white hover:opacity-90">
+                                Download Resume <span><i class="fa-solid fa-download"></i></span>
+                            </button>
+                        </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="lg:h-screen lg:mb-20 md:mb-10 w-full ">
+            <div class="lg:bg-[url('person2.png')] w-full bg-contain bg-no-repeat bg-center lg:h-fit relative">
+                <div class="flex lg:h-screen">
+                    <div class="flex flex-col lg:flex-row lg:justify-between gap-y-10 lg: py-10 lg:mt-2">
+                        <div class="lg:w-[490px] lg:pl-2">
+                            <h1 class="text-[50px] font-medium leading-[3.5rem]">Building <span class="bg-[linear-gradient(to_right,#304DF5_75%,#9016F4_100%)] bg-clip-text text-transparent"> Ethical Technology </span>for Tomorrow</h1>
+                        </div>
+
+                        <div class="lg:w-2/5 space-y-4 flex flex-col items-end justify-stretch lg:mt-[14rem] ml-auto">
+                            
+                            <div class="lg:space-x-5 lg:space-y-5 mr-auto lg:mr-0">   
+                                <p class="bg-[#F9F9F9] px-2 py-1 text-[#6C7179] rounded-full items-center gap-x-2 inline-flex"><span class=" w-2 h-2 rounded-full bg-green-400 p-1"></span> Engineer</p>
+                                <p class="bg-[#F9F9F9] px-2 py-1 text-[#6C7179] rounded-full items-center gap-x-2 inline-flex"><span class=" w-2 h-2 rounded-full bg-green-400 p-1"></span> Innovator</p>
+                                <p class="bg-[#F9F9F9] px-2 py-1 text-[#6C7179] rounded-full items-center gap-x-2 inline-flex"><span class=" w-2 h-2 rounded-full bg-green-400 p-1"></span> Community Leader</p>
+                            </div>
+            
+                            <div class="space-y-6 lg:w-[75%]">
+                                <p class="text-[#111111] p-3  text-[13px] font-medium">Aspiring engineer specializing in computer and software systems, dedicated to designing technology that is both innovative and ethical—improving communities and empowering underrepresented groups.</p>
+                                <button class="bg-[#1F1F1F] px-5 py-3 text-white rounded-2xl shadow-softmulti">Email Me</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section>
+        <div class="lg:px-28 px-4 py-10 flex gap-y-5 justify-between flex-col md:gap-y-16">
+            <div class="lg:w-[50rem]">
+                <h2 class="text-[33px] font-medium leading-10">
+                    I am passionate about <span class="text-[#304DF5]">computer science</span>  and <span class="text-[#304DF5]">engineering</span>, with particular strengths in robotics, programming, and applying technology to <span class="text-[#304DF5]">solve real-world problems</span>.
+                </h2>
+            </div>
+            <div class="flex flex-col md:flex-row gap-y-4 w-full justify-between">
+                <div class="md:w-3/5 shadow-[inset_0px_3.33px_20.42px_0px_#1650F51F] bg-[#F7F7F7] p-6 rounded-2xl space-y-4 text-[#111111]">
+                    <div class="bg-white space-y-4 p-4 rounded-2xl text-[15px] font-base">
+                        <p>"What sets me apart is my commitment to connecting technical innovation with ethical and moral reasoning, reflecting my studies in Justice and Biblical Theology.
+                        </p>
+                        <p>
+                            Through my work with HackBack, robotics competitions, and community service initiatives like Giveback Backpacks, I have consistently demonstrated that technology can be a powerful force for social good. 
+                        </p>
+                    </div>
+                    <div class="bg-white space-y-4 p-4 rounded-2xl text-[15px] font-base">
+                        <p>
+                            My approach is analytical and persistent—I break down complex problems into solvable parts and push through challenges until meaningful solutions emerge.
+
+                        </p>
+                        <p>
+                            Currently, I am conducting independent research on the gamification of education and its impact on student motivation. I love taking apart and reassembling systems—whether robotics, automotive parts, or software—because understanding how things work is the first step to making them better."
+                        </p>
+                    </div>
+                </div>
+                <div class="md:w-1/3 shadow-[inset_0px_3.33px_20.42px_0px_#1650F51F] bg-[#F7F7F7] p-6 rounded-xl flex justify-center items-center">
+                    <div class="flex justify-center items-center gap-x-2 gap-y-10 flex-wrap text-[#1F1F1F]">
+                        <div class="bg-white space-y-2 p-4 rounded-2xl text-[16.6px] font-base md:w-[109px] w-[40%] h-full text-center shadow-soft">
+                            <h3>2025 Hackathon Winner</h3>
+                        </div>
+                        <div class="bg-white space-y-2 p-4 rounded-2xl text-[16.6px] font-base md:w-[109px] w-[40%] h-[110px] sm:h-full text-center shadow-soft"><h3>$50k+ raised for LLS</h3></div>
+                        <div class="bg-white space-y-2 p-4 rounded-2xl text-[16.6px] font-base md:w-[109px] w-[40%] text-center shadow-soft"><h3>Grade A Johns Hopkins</h3></div>
+                        <div class="bg-white space-y-2 p-4 rounded-2xl text-[16.6px] font-base md:w-[109px] w-[40%] text-center shadow-soft"><h3>Multiple Leadership Roles</h3></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="lg:px-28 px-4 py-10 flex flex-col lg:flex-row justify-between w-full">
+            <p class="text-[#6C7179] text-[16.6px] font-medium">Projects</p>
+            <h3 class="md:text-[30px] text-[23px] md:leading-10 font-medium lg:w-[55%]">A selection of projects demonstrating <span class="text-[#7430F7]">technical expertise, innovation,</span> and commitment to <span class="text-[#7430F7]"> social impact</span></h3>
+        </div>
+        <div>
+            <div class="relative w-full overflow-x-auto scrollbar-hide snap-x snap-mandatory flex gap-4 p-4">
+                <div class="snap-start flex-shrink-0 bg-[#F7F7F7] group hover:bg-[#111111] transition-all hover:scale-y-105 px-2 rounded-xl flex flex-col p-2 gap-y-2 md:w-[36%] w-[70%] lg:w-[28%] hover:shadow-softglow">
+                    <div class="bg-white group-hover:bg-[#7430F7] flex justify-between p-2 rounded-xl items-center">
+                        <h2 class="text-[16.6px] font-medium group-hover:text-white">Discover U</h2>
+                        <p class="bg-[#FEFEE8] group-hover:bg-white font-medium rounded-full px-2 py-1 text-[10px]">2025 HackBack Winner</p>
+                    </div> 
+                    <div class="bg-white group-hover:bg-[linear-gradient(133.52deg,#7430F7_8.52%,#0052F6_97.08%)] flex flex-col justify-between p-2 rounded-lg items-center gap-y-4">
+                        <p class="text-[13px] text-[#6C7179] group-hover:text-white">DiscoverU is an innovative, gamified, AI-supported career counselling platform designed to help high school students discover meaningful career paths aligned with their passions and strengths. Traditional career counselling often falls short—counsellors manage caseloads of
+                            nearly students each, leading to generic assessments and limited personalised exploration. Read More</p>
+                        <div class="flex flex-wrap gap-3">
+                            <p class="text-[11px] text-[#6C7179] group-hover:bg-transparent group-hover:text-white group-hover:border-white group-hover:border-2 bg-[#F7F7F7] px-2 py-1 rounded-xl">Game Development</p>
+                            <p class="text-[11px] text-[#6C7179] group-hover:bg-transparent group-hover:text-white group-hover:border-white group-hover:border-2 bg-[#F7F7F7] px-2 py-1 rounded-xl">AI/ML</p>
+                            <p class="text-[11px] text-[#6C7179] group-hover:bg-transparent group-hover:text-white group-hover:border-white group-hover:border-2 bg-[#F7F7F7] px-2 py-1 rounded-xl">Data Analysis</p>
+                            <p class="text-[11px] text-[#6C7179] group-hover:bg-transparent group-hover:text-white group-hover:border-white group-hover:border-2 bg-[#F7F7F7] px-2 py-1 rounded-xl">UX Design</p>
+                            <p class="text-[11px] text-[#6C7179] group-hover:bg-transparent group-hover:text-white group-hover:border-white group-hover:border-2 bg-[#F7F7F7] px-2 py-1 rounded-xl">Educational Technology</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="snap-start flex-shrink-0 bg-[#F7F7F7] group hover:bg-[#111111] transition-all hover:scale-y-105 px-2 rounded-xl flex flex-col p-2 gap-y-2 md:w-[36%] w-[70%] lg:w-[28%] hover:shadow-softglow">
+                    <div class="bg-white group-hover:bg-[#7430F7] flex justify-between p-2 rounded-xl items-center">
+                        <h2 class="text-[16.6px] font-medium group-hover:text-white">Discover U</h2>
+                        <p class="bg-[#FEFEE8] group-hover:bg-white font-medium rounded-full px-2 py-1 text-[10px]">2025 HackBack Winner</p>
+                    </div> 
+                    <div class="bg-white group-hover:bg-[linear-gradient(133.52deg,#7430F7_8.52%,#0052F6_97.08%)] flex flex-col justify-between p-2 rounded-lg items-center gap-y-4">
+                        <p class="text-[13px] text-[#6C7179] group-hover:text-white">DiscoverU is an innovative, gamified, AI-supported career counselling platform designed to help high school students discover meaningful career paths aligned with their passions and strengths. Traditional career counselling often falls short—counsellors manage caseloads of
+                            nearly students each, leading to generic assessments and limited personalised exploration. Read More</p>
+                        <div class="flex flex-wrap gap-3">
+                            <p class="text-[11px] text-[#6C7179] group-hover:bg-transparent group-hover:text-white group-hover:border-white group-hover:border-2 bg-[#F7F7F7] px-2 py-1 rounded-xl">Game Development</p>
+                            <p class="text-[11px] text-[#6C7179] group-hover:bg-transparent group-hover:text-white group-hover:border-white group-hover:border-2 bg-[#F7F7F7] px-2 py-1 rounded-xl">AI/ML</p>
+                            <p class="text-[11px] text-[#6C7179] group-hover:bg-transparent group-hover:text-white group-hover:border-white group-hover:border-2 bg-[#F7F7F7] px-2 py-1 rounded-xl">Data Analysis</p>
+                            <p class="text-[11px] text-[#6C7179] group-hover:bg-transparent group-hover:text-white group-hover:border-white group-hover:border-2 bg-[#F7F7F7] px-2 py-1 rounded-xl">UX Design</p>
+                            <p class="text-[11px] text-[#6C7179] group-hover:bg-transparent group-hover:text-white group-hover:border-white group-hover:border-2 bg-[#F7F7F7] px-2 py-1 rounded-xl">Educational Technology</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="snap-start flex-shrink-0 bg-[#F7F7F7] group hover:bg-[#111111] transition-all hover:scale-y-105 px-2 rounded-xl flex flex-col p-2 gap-y-2 md:w-[36%] w-[70%] lg:w-[28%] hover:shadow-softglow">
+                    <div class="bg-white group-hover:bg-[#7430F7] flex justify-between p-2 rounded-xl items-center">
+                        <h2 class="text-[16.6px] font-medium group-hover:text-white">Giveback Backpacks</h2>
+                        <p class="bg-[#E9FEE8] group-hover:bg-white font-medium rounded-full px-2 py-1 md:text-[10px] text-[5px]">Mobile App Prototype</p>
+                    </div> 
+                    <div class="bg-white group-hover:bg-[linear-gradient(133.52deg,#7430F7_8.52%,#0052F6_97.08%)] flex flex-col justify-between p-2 rounded-lg items-center gap-y-4">
+                        <p class="text-[13px] text-[#6C7179] group-hover:text-white">I co-founded Giveback Backpacks, a community organisation focused on providing
+                            backpacks and essential school supplies to students in need. As co-founder, I organise
+                            fundraising campaigns, coordina...Read More</p>
+                        <div class="flex gap-x-2 w-full">
+                            <img src="t3.png" class="w-24 object-cover object-center rounded-xl" alt="">
+                            <img src="2dbc53e7963b2a10cd90bc08e45dd28cfd8e7735.png" class="w-16 object-cover object-center rounded-xl" alt="">
+                            <img src="t4.png" class="w-20 object-cover object-center rounded-xl" alt="">
+                        </div>
+                        <div class="flex flex-wrap gap-3">
+                            <p class="text-[11px] text-[#6C7179] group-hover:bg-transparent group-hover:text-white group-hover:border-white group-hover:border-2 bg-[#F7F7F7] px-2 py-1 rounded-xl">Community Organizing</p>
+                            <p class="text-[11px] text-[#6C7179] group-hover:bg-transparent group-hover:text-white group-hover:border-white group-hover:border-2 bg-[#F7F7F7] px-2 py-1 rounded-xl">Fundraising</p>
+                            <p class="text-[11px] text-[#6C7179] group-hover:bg-transparent group-hover:text-white group-hover:border-white group-hover:border-2 bg-[#F7F7F7] px-2 py-1 rounded-xl">Leadership</p>
+                            <p class="text-[11px] text-[#6C7179] group-hover:bg-transparent group-hover:text-white group-hover:border-white group-hover:border-2 bg-[#F7F7F7] px-2 py-1 rounded-xl">Social Impact</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="snap-start flex-shrink-0 bg-[#F7F7F7] group hover:bg-[#111111] transition-all hover:scale-y-105 px-2 rounded-xl flex flex-col p-2 gap-y-2 md:w-[36%] w-[70%] lg:w-[28%] hover:shadow-softglow">
+                    <div class="bg-white group-hover:bg-[#7430F7] flex justify-between p-2 rounded-xl items-center">
+                        <h2 class="text-[16.6px] font-medium group-hover:text-white">Discover U</h2>
+                        <p class="bg-[#FEE8E8] group-hover:bg-white font-medium rounded-full px-2 py-1 text-[10px]">Passion Project</p>
+                    </div> 
+                    <div class="bg-white group-hover:bg-[linear-gradient(133.52deg,#7430F7_8.52%,#0052F6_97.08%)] flex flex-col justify-between p-2 rounded-lg items-center gap-y-4">
+                        <p class="text-[13px] text-[#6C7179] group-hover:text-white">DiscoverU is an innovative, gamified, AI-supported career counselling platform designed to help high school students discover meaningful career paths aligned with their passions and strengths. Traditional career counselling often falls short—counsellors manage caseloads of
+                            nearly students each, leading to generic assessments and limited personalised exploration. Read More</p>
+                        <div class="flex flex-wrap gap-3">
+                            <p class="text-[11px] text-[#6C7179] group-hover:bg-transparent group-hover:text-white group-hover:border-white group-hover:border-2 bg-[#F7F7F7] px-2 py-1 rounded-xl">Game Development</p>
+                            <p class="text-[11px] text-[#6C7179] group-hover:bg-transparent group-hover:text-white group-hover:border-white group-hover:border-2 bg-[#F7F7F7] px-2 py-1 rounded-xl">AI/ML</p>
+                            <p class="text-[11px] text-[#6C7179] group-hover:bg-transparent group-hover:text-white group-hover:border-white group-hover:border-2 bg-[#F7F7F7] px-2 py-1 rounded-xl">Data Analysis</p>
+                            <p class="text-[11px] text-[#6C7179] group-hover:bg-transparent group-hover:text-white group-hover:border-white group-hover:border-2 bg-[#F7F7F7] px-2 py-1 rounded-xl">UX Design</p>
+                            <p class="text-[11px] text-[#6C7179] group-hover:bg-transparent group-hover:text-white group-hover:border-white group-hover:border-2 bg-[#F7F7F7] px-2 py-1 rounded-xl">Educational Technology</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="snap-start flex-shrink-0 bg-[#F7F7F7] group hover:bg-[#111111] transition-all hover:scale-y-105 px-2 rounded-xl flex flex-col p-2 gap-y-2 md:w-[36%] w-[70%] lg:w-[28%] hover:shadow-softglow">
+                    <div class="bg-white group-hover:bg-[#7430F7] flex justify-between p-2 rounded-xl items-center">
+                        <h2 class="text-[16.6px] font-medium group-hover:text-white">Discover U</h2>
+                        <p class="bg-[#FEFEE8] group-hover:bg-white font-medium rounded-full px-2 py-1 text-[10px]">2025 HackBack Winner</p>
+                    </div> 
+                    <div class="bg-white group-hover:bg-[linear-gradient(133.52deg,#7430F7_8.52%,#0052F6_97.08%)] flex flex-col justify-between p-2 rounded-lg items-center gap-y-4">
+                        <p class="text-[13px] text-[#6C7179] group-hover:text-white">DiscoverU is an innovative, gamified, AI-supported career counselling platform designed to help high school students discover meaningful career paths aligned with their passions and strengths. Traditional career counselling often falls short—counsellors manage caseloads of
+                            nearly students each, leading to generic assessments and limited personalised exploration. Read More</p>
+                        <div class="flex flex-wrap gap-3">
+                            <p class="text-[11px] text-[#6C7179] group-hover:bg-transparent group-hover:text-white group-hover:border-white group-hover:border-2 bg-[#F7F7F7] px-2 py-1 rounded-xl">Game Development</p>
+                            <p class="text-[11px] text-[#6C7179] group-hover:bg-transparent group-hover:text-white group-hover:border-white group-hover:border-2 bg-[#F7F7F7] px-2 py-1 rounded-xl">AI/ML</p>
+                            <p class="text-[11px] text-[#6C7179] group-hover:bg-transparent group-hover:text-white group-hover:border-white group-hover:border-2 bg-[#F7F7F7] px-2 py-1 rounded-xl">Data Analysis</p>
+                            <p class="text-[11px] text-[#6C7179] group-hover:bg-transparent group-hover:text-white group-hover:border-white group-hover:border-2 bg-[#F7F7F7] px-2 py-1 rounded-xl">UX Design</p>
+                            <p class="text-[11px] text-[#6C7179] group-hover:bg-transparent group-hover:text-white group-hover:border-white group-hover:border-2 bg-[#F7F7F7] px-2 py-1 rounded-xl">Educational Technology</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <article class="lg:my-20">
+        <div class="lg:px-28 px-4 py-10 flex justify-between flex-col gap-y-4">
+            <div class="flex justify-between items-center w-full">
+                <h2 class="text-[30px] text-[#111111] font-medium">My Skills</h2>
+            </div>
+            <div class="flex justify-between items-center gap-2 w-full flex-wrap">
+                <div class="md:w-[49%] w-full group flex items-center bg-[#F7F7F7] rounded-xl p-4 gap-x-3 hover:shadow-[13.33px_13.33px_18.86px_-0.83px_#00000033,5.25px_5.25px_7.42px_-0.67px_#0000001C,2.36px_2.36px_3.34px_-0.5px_#00000014,1.08px_1.08px_1.52px_-0.33px_#00000010,0.4px_0.4px_0.56px_-0.17px_#0000000E] hover:bg-[linear-gradient(133.52deg,#7430F7_8.52%,#0052F6_97.08%)]">
+                    <img src="4483708d19b578b1162c22f6613552d21560acde.png" class="w-[46.6px] h-[46.6px] object-cover rounded-xl" alt="">
+                    <div class="group-hover:text-white">
+                        <h3 class="text-[16px] text-[#111111] group-hover:text-white">Coding</h3>
+                        <p class="text-[13px] font-base text-[#6C7179] group-hover:text-white">App Development, Python, Java, C++, JavaScript, and Arduino.</p>
+                        <a href="" class="text-[13px] font-medium underline text-[#6C7179] group-hover:text-white">Learn More</a>
+                    </div>
+                </div>
+                <div class="md:w-[49%] w-full group flex items-center bg-[#F7F7F7] rounded-xl p-4 gap-x-3 hover:shadow-[13.33px_13.33px_18.86px_-0.83px_#00000033,5.25px_5.25px_7.42px_-0.67px_#0000001C,2.36px_2.36px_3.34px_-0.5px_#00000014,1.08px_1.08px_1.52px_-0.33px_#00000010,0.4px_0.4px_0.56px_-0.17px_#0000000E] hover:bg-[linear-gradient(133.52deg,#7430F7_8.52%,#0052F6_97.08%)]">
+                    <img src="4483708d19b578b1162c22f6613552d21560acde.png" class="w-[46.6px] h-[46.6px] object-cover rounded-xl" alt="">
+                    <div class="">
+                        <h3 class="text-[16px] text-[#111111] group-hover:text-white">Product Design & Engineering</h3>
+                        <p class="text-[13px] font-base text-[#6C7179] group-hover:text-white">CAD Design, Robotics, Product Design, Prototyping, Command Line</p>
+                        <a href="" class="text-[13px] font-medium underline text-[#6C7179] group-hover:text-white">Learn More</a>
+                    </div>
+                </div>
+                <div class="md:w-[49%] w-full group flex items-center bg-[#F7F7F7] rounded-xl p-4 gap-x-3 hover:shadow-[13.33px_13.33px_18.86px_-0.83px_#00000033,5.25px_5.25px_7.42px_-0.67px_#0000001C,2.36px_2.36px_3.34px_-0.5px_#00000014,1.08px_1.08px_1.52px_-0.33px_#00000010,0.4px_0.4px_0.56px_-0.17px_#0000000E] hover:bg-[linear-gradient(133.52deg,#7430F7_8.52%,#0052F6_97.08%)] hover:text-white">
+                    <img src="4483708d19b578b1162c22f6613552d21560acde.png" class="w-[46.6px] h-[46.6px] object-cover rounded-xl" alt="">
+                    <div class="">
+                        <h3 class="text-[16px] text-[#111111] group-hover:text-white">Adaptability</h3>
+                        <p class="text-[13px] font-base text-[#6C7179] group-hover:text-white">Skilled across hardware, software, & research with rapid learning.</p>
+                        <a href="" class="text-[13px] font-medium underline text-[#6C7179] group-hover:text-white">Learn More</a>
+                    </div>
+                </div>
+                <div class="md:w-[49%] w-full group flex items-center bg-[#F7F7F7] rounded-xl p-4 gap-x-3 hover:shadow-[13.33px_13.33px_18.86px_-0.83px_#00000033,5.25px_5.25px_7.42px_-0.67px_#0000001C,2.36px_2.36px_3.34px_-0.5px_#00000014,1.08px_1.08px_1.52px_-0.33px_#00000010,0.4px_0.4px_0.56px_-0.17px_#0000000E] hover:bg-[linear-gradient(133.52deg,#7430F7_8.52%,#0052F6_97.08%)]">
+                    <img src="4483708d19b578b1162c22f6613552d21560acde.png" class="w-[46.6px] h-[46.6px] object-cover rounded-xl" alt="">
+                    <div class="">
+                        <h3 class="text-[16px] text-[#111111] group-hover:text-white">Communication</h3>
+                        <p class="text-[13px] font-base text-[#6C7179] group-hover:text-white">Public speaking, technical writing, & presenting research findings.</p>
+                        <a href="" class="text-[13px] font-medium underline text-[#6C7179] group-hover:text-white">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <section class="bg-[url('img.jpg')] h-fit">
+        <div class="px-4 lg:px-28 py-24 flex justify-between flex-col gap-y-14">
+            <div class="w-full flex flex-col md:flex-row justify-between">
+                <p class="text-[#6C7179] text-[16.6px] font-medium">Internship</p>
+                <div class="text-white md:w-[55%]">
+                    <h3 class="text-[30px] leading-10 font-medium">Internships, Research & Pre-College Programs</h3>
+                    <p class="text-[21px]">Exploring innovation through hands-on learning and real-world impact</p>
+                    <div class="space-y-12 flex flex-col mt-10">
+                        <div class="relative p-[1.4px] md:w-[70%] rounded-3xl bg-[linear-gradient(180deg,#7430F7_0%,#0052F6_100%)]">
+                            <div class="bg-[#111111] rounded-3xl px-6 py-4 space-y-4">
+                                <div class="flex justify-between items-center">
+                                    <p class="rounded-full w-[33px] h-[33px] bg-[linear-gradient(90deg,#7430F7_0%,#0052F6_100%)] text-white p-4 flex items-center justify-center text-[20px] font-medium">1</p>
+                                    <p class="text-[#6C7179]">August 2025</p>
+                                </div>
+                                <h2 class="text-[20px] font-medium text-white">Book a Research Study: Gamified Career Counseling</h2>
+                                <p class="text-[13.3px] text-[#AFAFAF] font-base">Conducted a comprehensive research study titled "DiscoverU: The Impact of Gamified, AI Supported Career Counselling on Student Career Alignment." The study involved high school juniors across three public schools, comparing gamified career counselling with traditional methods over a fou...Read More</p>
+                            </div>
+                        </div>
+                        <div class="relative p-[1.4px] md:w-[80%] ml-auto rounded-3xl bg-[linear-gradient(180deg,#7430F7_0%,#0052F6_100%)]">
+                            <div class="bg-[#111111] rounded-3xl px-6 py-4 space-y-4">
+                                <div class="flex justify-between items-center">
+                                    <p class="rounded-full w-[33px] h-[33px] bg-[linear-gradient(90deg,#7430F7_0%,#0052F6_100%)] text-white p-4 flex items-center justify-center text-[20px] font-medium">2</p>
+                                    <p class="text-[#6C7179]">July 2025</p>
+                                </div>
+                                <h2 class="text-[20px] font-medium text-white">Johns Hopkins University - Engineering Innovation Program</h2>
+                                <p class="text-[13.3px] text-[#AFAFAF] font-base">Completed a rigorous college-level Engineering Innovation Program at Johns Hopkins University during summer . The program covered multiple engineering disciplines through hands-on labs, product design projects, oral presentations, and a bridge-building competition. Earned a Grade A, demonstrating strong performance in college-level engineering coursework. ...Read More</p>
+                                <img src="t2.png" alt="" class="rounded-md w-32">
+                            </div>
+                        </div>
+                        <div class="relative p-[1.4px] md:w-[70%] rounded-3xl bg-[linear-gradient(180deg,#7430F7_0%,#0052F6_100%)]">
+                            <div class="bg-[#111111] rounded-3xl px-6 py-4 space-y-4">
+                                <div class="flex justify-between items-center">
+                                    <p class="rounded-full w-[33px] h-[33px] bg-[linear-gradient(90deg,#7430F7_0%,#0052F6_100%)] text-white p-4 flex items-center justify-center text-[20px] font-medium">3</p>
+                                    <p class="text-[#6C7179]">July 2025</p>
+                                </div>
+                                <h2 class="text-[20px] font-medium text-white">American University - Development Project</h2>
+                                <p class="text-[13.3px] text-[#AFAFAF] font-base">Participated in a summer development project at American University where I co-created Achieve Balance, a scheduling tool for student-athletes. The program provided hands-on experience in software development, user experience design, and addressing real-world problems through tech...Read More</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="lg:px-28 px-2 py-10 flex justify-between flex-col gap-y-4 my-20">
+            <div class="flex flex-col-reverse lg:flex-row justify-between md:items-center w-full">
+                <h2 class="text-[30px] text-[#111111] font-medium">Extracurricular Activities</h2>
+                <p class="text-[#6C7179] text-[16px] font-medium">Activities</p>
+            </div>
+            <div class="flex justify-between items-center gap-2 w-full flex-wrap text-white">
+                <div class="md:w-[49%] w-full relative">
+                    <img src="d3727211ab3f97a9b7fd3d131b9abcd45026e8ac.png" class="w-full h-[350px] object-cover rounded-3xl" alt="">
+                    <div class="absolute bottom-0 p-4 bg-black bg-opacity-60 w-full rounded-b-3xl">
+                        <h3 class="text-[20px]">Chess Club - Co Captain</h3>
+                        <p class="text-[13px]">In the Chess Club (Lions), I helped amplify the school's chess team and now lead recruitment, training, and competition strategy. I help in organising weekly practice sessions, coordinating inter-school matches, and mentoring newer players. I also prototyped a mobile app to connect chess clubs across schools, expanding competitive opportunities beyond our immediate community.</p>
+                    </div>
+                </div>
+                <div class="md:w-[49%] w-full relative">
+                    <img src="018d8fc011956965b9dabfec41b32e0a640864e6.png" class="w-full h-[350px] object-cover rounded-3xl" alt="">
+                    <div class="absolute bottom-0 p-4 bg-black bg-opacity-60 w-full rounded-b-3xl">
+                        <h3 class="text-[20px]">Theatre Set Design</h3>
+                        <p class="text-[13px]">
+                            As a staff member for the school's Theatre and Set Design, I help in optimizing the school's play and theatre ground and now help in the production of theatre plays. I build the sets needed for the plays over the weeks during the winter, and helped to schedule and rehearse in the plays.                        
+                        </p>
+                    </div>
+                </div>
+                <div class="md:w-[49%] w-full relative">
+                    <img src="5a19495b2b2dc3df07b338a362a73dbff7cc1504.png" class="w-full h-[350px] object-cover rounded-3xl" alt="">
+                    <div class="absolute bottom-0 p-4 bg-black bg-opacity-60 w-full rounded-b-3xl">
+                        <h3 class="text-[20px]">Robotics Club - Programming & Design Lead</h3>
+                        <p class="text-[13px]">
+                            I lead programming and design for our school's competitive robotics team. My responsibilities include writing control code, designing and manufacturing robot components using CAD, strategizing for competitions, and presenting our work to judges and sponsors. I guide the team through the iterative design process, troubleshooting technical challenges and optimizing performance.                        </p>
+                    </div>
+                </div>
+                <div class="md:w-[49%] w-full relative">
+                    <img src="81fe6c07e4d854c345dcab4b9b52835f8ee191cf.png" class="w-full h-[350px] object-cover rounded-3xl" alt="">
+                    <div class="absolute bottom-0 p-4 bg-black bg-opacity-60 w-full rounded-b-3xl">
+                        <h3 class="text-[20px]">Leukemia & Lymphoma Society (LLS) - Fundraising Leadership</h3>
+                        <p class="text-[13px]">
+                            I helped organize and lead fundraising efforts for the Leukemia & Lymphoma Society, raising over $, to support cancer research and patient services. This involved coordinating events,
+                            engaging community members, and building awareness about blood cancer research. The experience taught me how to mobilize people around a meaningful cause and demonstrated the real-world impact of persistent, organized effort.                         </p>
+                    </div>
+                </div>
+                <div class="md:w-[49%] w-full relative">
+                    <img src="2dbc53e7963b2a10cd90bc08e45dd28cfd8e7735.png" class="w-full h-[350px] object-cover rounded-3xl" alt="">
+                    <div class="absolute bottom-0 p-4 bg-black bg-opacity-60 w-full rounded-b-3xl">
+                        <h3 class="text-[20px]">Giveback Backpacks - Co-Founder</h3>
+                        <p class="text-[13px]">
+                            Co-founded and lead a community service organisation providing backpacks and school supplies to students in need. Organise fundraising campaigns, coordinate supply drives, and partner with local schools to ensure educational equity.</p>
+                    </div>
+                </div>
+
+                <div class="md:w-[49%] w-full relative rounded-2xl">
+                    <img src="394f76f88582b4ee1c985c09b7630df760d53181.png" class="w-full h-[350px] object-cover rounded-3xl" alt="">
+                    <div class="absolute bottom-0 p-4 bg-black bg-opacity-60 w-full rounded-b-3xl">
+                        <h3 class="text-[20px]">Shepherd’s Table</h3>
+                        <p class="text-[13px]">
+                            Volunteering at a local community center established for helping people in need. I’ve been volunteering at Shepherds table for the past 2-3 years helping to cook and clean for people in need across the country.                        </p>
+                    </div>
+                </div>      
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="lg:px-28 px-2 py-10 flex flex-col md:flex-row md:gap-x-4 gap-y-6 justify-between">
+            <div class="md:w-1/2">
+                <div class="flex flex-col gap-y-1 leading-10">
+                    <p class="text-[#6C7179] text-[16.6px] font-medium">Unique Interest</p>
+                    <h2 class="text-[30px] text-[#111111] font-semibold">Exploring the interests that guide my mission to <span class="bg-[linear-gradient(to_right,#304DF5_75%,#9016F4_100%)] bg-clip-text text-transparent">build meaningful</span>, <span class="bg-[linear-gradient(to_right,#304DF5_75%,#9016F4_100%)] bg-clip-text text-transparent"> inclusive technology</span>.</h2>
+                    <button class="bg-black text-white px-4 shadow-b-md rounded-xl w-28 mt-4 shadow-[13.33px_13.33px_18.86px_-0.83px_#00000033,5.25px_5.25px_7.42px_-0.67px_#0000001C,2.36px_2.36px_3.34px_-0.5px_#00000014,1.08px_1.08px_1.52px_-0.33px_#0000000F,0.4px_0.4px_0.56px_-0.17px_#0000000D]">Email Me</button>
+                </div>
+            </div>
+            <div class="md:w-1/2 shadow-[inset_0px_3.33px_20.42px_0px_#1650F51F] bg-[#F7F7F7] p-6 rounded-xl">
+                <div class="flex flex-col items-center">
+                    <p class="text-[13px] font-base bg-black text-center w-48 py-2 px-4 rounded-full text-white shadow-[13.33px_13.33px_18.86px_-0.83px_#00000033,5.25px_5.25px_7.42px_-0.67px_#0000001C,2.36px_2.36px_3.34px_-0.5px_#00000014,1.08px_1.08px_1.52px_-0.33px_#0000000F,0.4px_0.4px_0.56px_-0.17px_#0000000D]">Topics that interests you</p>
+                    <div class="space-y-4 mt-8">
+                        <div class="bg-white rounded-xl overflow-hidden">
+                            <button class="w-full flex justify-between items-center p-4 text-left font-medium text-gray-700 hover:bg-gray-50 focus:outline-none" onclick="toggleAccordion(this)">
+                                <span class="font-semibold text-[16px] text-[#111111]">Assistive Technology & Accessibility</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 px-4 text-gray-600">
+                                <p class="py-2 text-[13px] font-base">
+                                    I am deeply passionate about designing technology that empowers people with disabilities. My assistive robotic arm project reflects this commitment—I believe that independence should not
+                                    be limited by physical constraints, and that affordable, open-source solutions can transform lives. I study existing assistive technologies, follow developments in accessible design, and think constantly about how engineering can serve those who are often overlooked by
+                                    mainstream technology development. Beyond my current project, I'm interested in exploring brain-computer interfaces, adaptive
+                                    controllers, smart home automation for accessibility, and prosthetics. I believe the future of technology must be inclusive, and I want to be part of building that future.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl overflow-hidden">
+                            <button class="w-full flex justify-between items-center p-4 text-left font-medium text-gray-700 hover:bg-gray-50 focus:outline-none" onclick="toggleAccordion(this)">
+                                <span class="font-semibold text-[16px] text-[#111111]">Do you offer revisions?</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 px-4 text-gray-600">
+                                <p class="py-2 text-[13px] font-base">
+                                    I am deeply passionate about designing technology that empowers people with disabilities. My assistive robotic arm project reflects this commitment—I believe that independence should not
+                                    be limited by physical constraints, and that affordable, open-source solutions can transform lives. I study existing assistive technologies, follow developments in accessible design, and think constantly about how engineering can serve those who are often overlooked by
+                                    mainstream technology development. Beyond my current project, I'm interested in exploring brain-computer interfaces, adaptive
+                                    controllers, smart home automation for accessibility, and prosthetics. I believe the future of technology must be inclusive, and I want to be part of building that future.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl overflow-hidden">
+                            <button class="w-full flex justify-between items-center p-4 text-left font-medium text-gray-700 hover:bg-gray-50 focus:outline-none" onclick="toggleAccordion(this)">
+                                <span class="font-semibold text-[16px] text-[#111111]">What do you need from me to get started?</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 px-4 text-gray-600">
+                                <p class="py-2 text-[13px] font-base">
+                                    I am deeply passionate about designing technology that empowers people with disabilities. My assistive robotic arm project reflects this commitment—I believe that independence should not
+                                    be limited by physical constraints, and that affordable, open-source solutions can transform lives. I study existing assistive technologies, follow developments in accessible design, and think constantly about how engineering can serve those who are often overlooked by
+                                    mainstream technology development. Beyond my current project, I'm interested in exploring brain-computer interfaces, adaptive
+                                    controllers, smart home automation for accessibility, and prosthetics. I believe the future of technology must be inclusive, and I want to be part of building that future.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-xl overflow-hidden">
+                            <button class="w-full flex justify-between items-center p-4 text-left font-medium text-gray-700 hover:bg-gray-50 focus:outline-none" onclick="toggleAccordion(this)">
+                                <span class="font-semibold text-[16px] text-[#111111]">Can you work with my existing brand guidelines?</span>
+                                <svg class="w-5 h-5 transition-transform duration-300" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                </svg>
+                            </button>
+                            <div class="accordion-content max-h-0 overflow-hidden transition-all duration-500 px-4 text-gray-600">
+                                <p class="py-2 text-[13px] font-base">
+                                    I am deeply passionate about designing technology that empowers people with disabilities. My assistive robotic arm project reflects this commitment—I believe that independence should not
+                                    be limited by physical constraints, and that affordable, open-source solutions can transform lives. I study existing assistive technologies, follow developments in accessible design, and think constantly about how engineering can serve those who are often overlooked by
+                                    mainstream technology development. Beyond my current project, I'm interested in exploring brain-computer interfaces, adaptive
+                                    controllers, smart home automation for accessibility, and prosthetics. I believe the future of technology must be inclusive, and I want to be part of building that future.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="px-4 md:mt-10 md:px-8  text-white w-full bg-[linear-gradient(to_right,#304DF5_10%,#9016F4_100%)]">
+        <div class="flex flex-col md:flex-row justify-between  w-full">
+            <div class="md:w-[100%] sm:w-[50%] w-full">
+                <div class="flex flex-col py-10 md:px-2  md:w-[100%] w-full">
+                    <h2 class="text-[30px]">
+                        Let's Build Something Meaningful Together
+                    </h2>
+                    <div class="flex md:w-[60%] mt-6 space-x-2">
+                        <button class="bg-white w-[40%] text-[#7430F7] py-2 text-[13px] font-medium px-4 rounded-xl inline-flex items-center justify-center gap-x-2">Email Me <span><i class="fa-regular fa-envelope"></i></span></button>
+                        <button class="border-2 w-[60%] md:w-[40%] border-white text-[#fff] py-2 text-[13px] font-base px-4 rounded-xl inline-flex items-center justify-center gap-x-2">Download Resume <span><i class="fa-solid fa-download"></i></span></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-full sm:w-[50%] ">
+                <div class="flex md:justify-between gap-x-10 w-full py-10 md:px-20 md:w-[80%] mr-auto">
+                    <div>
+                        <nav>
+                            <ul class="flex flex-col text-base">
+                                <li>
+                                    <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">About</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">Projects</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">Internships</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">Skills</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">Activities</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">Interest</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div>
+                        <ul class="flex flex-col text-base">
+                            <li><a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">Github</a></li>
+                            <li><a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row justify-between py-10 lg:px-20">
+            <p class="text-[13px]">&copy; 2025 All right reserved </p>
+            <p class="text-[13px]">Open to internship opportunities, research collaborations, and meaningful projects</p>
+        </div>
+    </footer>
+</body>
+
+<script>
+    function toggleAccordion(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector("svg");
+      const isOpen = content.classList.contains("max-h-[500px]");
+
+        // Close all accordions
+      document.querySelectorAll(".accordion-content").forEach((el) => {
+        el.classList.remove("max-h-[500px]");
+        el.classList.add("max-h-0");
+        el.previousElementSibling.querySelector("svg").classList.remove("rotate-180");
+      });
+
+      // Open current one if it wasn't open
+      if (!isOpen) {
+        content.classList.remove("max-h-0");
+        content.classList.add("max-h-[500px]");
+        icon.classList.add("rotate-180");
+      }
+    }
+
+
+    const btn = document.getElementById('btn');
+    const elem = document.getElementById('elem');
+
+    btn.addEventListener('click', () => {
+      const isHidden = elem.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      elem.setAttribute('aria-hidden', String(isHidden));
+    });
+
+    document.addEventListener('click', (e) => {
+      const target = e.target;
+      const insideNav = elem.contains(target) || btn.contains(target);
+      if (!insideNav && !elem.classList.contains('hidden')) {
+        elem.classList.add('hidden');
+        btn.setAttribute('aria-expanded', 'false');
+        elem.setAttribute('aria-hidden', 'true');
+      }
+    });
+  </script>
+</html>

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.gradient-border {
+  border: 1.83px;
+  border-color: linear-gradient(180deg, #7430F7 0%, #0052F6 100%);
+  border-radius: 3rem;
+}
+
+
+/* In your global CSS (e.g., index.css or globals.css) */
+/* Hide scrollbar for Chrome, Safari, Opera */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge, Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+
+
