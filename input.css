@@ -11,6 +11,10 @@
   border-radius: 3rem;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 
 /* In your global CSS (e.g., index.css or globals.css) */
 /* Hide scrollbar for Chrome, Safari, Opera */
@@ -22,6 +26,8 @@
 .scrollbar-hide {
   
 }
+
+
 
 
 

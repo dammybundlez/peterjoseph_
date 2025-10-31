@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter' ;
+        }
+        
+
+        header {
+            background-color: aqua;
+            position: relative;
+        }
+
+        nav {
+            background-color: #f0f0f0;
+            padding: 10px;
+            display: flex;
+        }
+        
+        .mobileview {
+            display: none;
+            background: rgba(51, 170, 51, 0.961);
+            position: absolute;
+            left: 0;
+            top: 100%;
+            width: 100%;
+            z-index: 20;
+        }
+
+        .hidden { display: none !important; }
+
+        li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 1rem 0;
+            flex-wrap: wrap;
+        }
+
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        #btn {
+            display: none;
+            background: transparent;
+            border: none;
+            padding: 4px;
+            cursor: pointer;
+         }
+
+
+        @media screen and (max-width: 768px ) {
+            .mobileview {
+                display: block;
+            }
+
+            .mobileview ul {
+                display: flex;
+                flex-direction: column;
+                gap: 0.9rem 0;
+                padding: 10px;
+            }
+
+            #btn { display: block;}
+
+            .mobileview a {
+                color: white;
+            }
+
+            nav ul{
+                display: none;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sfegwebsite.html">SfegwebPage</a></li>
+                <li><a href="whoarewe.html">Who Are we</a></li>
+                <li><a href="ourworking.html">Our Work</a></li>
+                <li><a href="ourwork1.html">Our Work 1</a></li>
+                <li><a href="ourwork2.html">Our Work 2</a></li>
+                <li><a href="ourimpact.html">Impact</a></li>
+                <li><a href="sfegblog.html">Blog</a></li>
+                <li><a href="sfegblogdetails.html">Blog Details</a></li>
+                <li><a href="joinus.html">Join Us</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a href="eventdetails.html">EventDatails</a></li>
+            </ul>
+        <button id="btn" aria-expanded="false" aria-controls="elem" aria-label="Toggle menu">
+        <img src="Hamburger_icon.svg" alt="menu icon" style="width:30px; height:30px;">
+      </button>
+    </nav>
+
+    <nav class="mobileview hidden" id="elem" aria-hidden="true">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sfegwebsite.html">SfegwebPage</a></li>
+        <li><a href="whoarewe.html">Who Are we</a></li>
+        <li><a href="ourworking.html">Our Work</a></li>
+        <li><a href="ourwork1.html">Our Work 1</a></li>
+        <li><a href="ourwork2.html">Our Work 2</a></li>
+        <li><a href="ourimpact.html">Impact</a></li>
+        <li><a href="sfegblog.html">Blog</a></li>
+        <li><a href="sfegblogdetails.html">Blog Details</a></li>
+        <li><a href="joinus.html">Join Us</a></li>
+        <li><a href="event.html">Event</a></li>
+        <li><a href="eventdetails.html">EventDetails</a></li>
+      </ul>
+    </nav>
+    </header>
+</body>
+
+<script>
+    const btn = document.getElementById('btn');
+    const elem = document.getElementById('elem');
+
+    btn.addEventListener('click', () => {
+      const isHidden = elem.classList.toggle('hidden');
+      btn.setAttribute('aria-expanded', String(!isHidden));
+      elem.setAttribute('aria-hidden', String(isHidden));
+    });
+
+    document.addEventListener('click', (e) => {
+      const target = e.target;
+      const insideNav = elem.contains(target) || btn.contains(target);
+      if (!insideNav && !elem.classList.contains('hidden')) {
+        elem.classList.add('hidden');
+        btn.setAttribute('aria-expanded', 'false');
+        elem.setAttribute('aria-hidden', 'true');
+      }
+    });
+</script>
+
+</html>
