@@ -9,33 +9,35 @@
     <link rel="stylesheet" href="output.css">
 </head>
 <body class="font-instrument">
-    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 sticky top-0 w-full left-0 z-10 bg-white shadow-sm">
-        <header class="flex items-center justify-between py-2">
-            <div class="">
-                <h1 class="text-[23px] font-medium text-[#111111] uppercase font-sans">
-                    Joseph Peters
+    <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8 sticky top-0 w-full left-0 z-10 bg-white shadow-sm border-b border-gray-400">
+        <header class="flex items-center justify-between py-2 ">
+            <div class="flex">
+                <h1 class="text-[20px] font-semibold text-[#111111] uppercase font-sans">
+                    <a href="/">    
+                        Joseph Peters
+                    </a> 
                 </h1>
             </div>
             <div class="hidden lg:block justify-center">
                 <nav>
-                    <ul class="flex space-x-6 text-lg font-medium text-[#111111]">
+                    <ul class="flex space-x-6 text-lg font-medium text-[#111111] uppercase">
                         <li>
-                            <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">About</a>
+                            <a href="#about" class="hover:text-[#304DF5] text-[13px] font-medium">About</a>
                         </li>
                         <li>
-                            <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">Projects</a>
+                            <a href="#projects" class="hover:text-[#304DF5] text-[13px] font-medium">Projects</a>
                         </li>
                         <li>
-                            <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">Internships</a>
+                            <a href="#internships" class="hover:text-[#304DF5] text-[13px] font-medium">Internships</a>
                         </li>
                         <li>
-                            <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">Skills</a>
+                            <a href="#skills" class="hover:text-[#304DF5] text-[13px] font-medium">Skills</a>
                         </li>
                         <li>
-                            <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">Activities</a>
+                            <a href="#activities" class="hover:text-[#304DF5] text-[13px] font-medium">Activities</a>
                         </li>
                         <li>
-                            <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">Interest</a>
+                            <a href="#interest" class="hover:text-[#304DF5] text-[13px] font-medium">Interest</a>
                         </li>
                     </ul>
                 </nav>
@@ -50,7 +52,7 @@
             <div class="sm:block lg:hidden" x-data="{ open: false }">
                 <button 
                     @click="open = !open"
-                    class="text-gray-700 hover:text-blue-600 focus:outline-none"
+                    class="text-gray-700 hover:text-[#304DF5] focus:outline-none"
                     >
                     <img src="Hamburger_icon.svg" alt="">  
                 </button>
@@ -58,27 +60,27 @@
                 <div 
                     x-show="open"
                     x-transition
-                    class="absolute top-11 left-0 md:w-[70%] w-full h-screen bg-white z-10 shadow-md flex flex-col space-y-2 px-6 py-4 lg:hidden"
+                    class="absolute top-11 left-0 md:w-[70%] w-full bg-white z-10 shadow-md flex flex-col space-y-2 px-6 py-4 lg:hidden"
                         >
                         <nav class="mb-10">
                             <ul class="flex  flex-col gap-y-3 text-lg font-medium text-[#111111]">
                                 <li>
-                                    <a href="#" class="hover:text-blue-600 text-[15.5px] font-medium">About</a>
+                                    <a href="#about" class="hover:text-[#304DF5] text-[15.5px] font-medium">About</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="hover:text-blue-600 text-[15.5px] font-medium">Projects</a>
+                                    <a href="#projects" class="hover:text-[#304DF5] text-[15.5px] font-medium">Projects</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="hover:text-blue-600 text-[15.5px] font-medium">Internships</a>
+                                    <a href="#internships" class="hover:text-[#304DF5] text-[15.5px] font-medium">Internships</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="hover:text-blue-600 text-[15.5px] font-medium">Skills</a>
+                                    <a href="#skills" class="hover:text-[#304DF5] text-[15.5px] font-medium">Skills</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="hover:text-blue-600 text-[15.5px] font-medium">Activities</a>
+                                    <a href="#activities" class="hover:text-[#304DF5] text-[15.5px] font-medium">Activities</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="hover:text-blue-600 text-[15.5px] font-medium">Interest</a>
+                                    <a href="#interest" class="hover:text-[#304DF5] text-[15.5px] font-medium">Interest</a>
                                 </li>
                             </ul>
                         </nav>
@@ -92,20 +94,44 @@
             </div>
         </header>
     </div>
+
+    
     <div class="">
-        <div class="bg-[url('perosn3.jpg')] bg-blue-600 w-full bg-cover bg-no-repeat bg-center h-screen">
+        <div class="bg-[url('perosn3.jpg')] bg-[#304DF5] w-full bg-cover bg-no-repeat bg-center lg:h-screen h-[500px] mt-[-3.5rem] lg:mt-5">
         </div>
     </div>
-
+    
     <section>
-        <div class="lg:px-28 px-4 py-10 flex items-center justify-center gap-y-5 md:gap-y-2">
-            <div class="w-[69.9%] text-center flex items-center justify-center">
+        <div class="lg:px-28 px-4 py-10 flex flex-col items-center justify-center gap-y-5 md:gap-y-4">
+            <div class="md:w-[69.9%] text-center flex items-center justify-center">
                 <h1 class="text-[50px] font-medium leading-[3.5rem]">Building <span class="bg-[linear-gradient(to_right,#304DF5_75%,#9016F4_100%)] bg-clip-text text-transparent"> Ethical Technology </span> <br>for Tomorrow</h1>
+            </div>
+            <div> 
+                <button onclick="openPDFs()" class="rounded-xl flex items-center gap-x-2 py-3 px-5 text-[16.6px] font-medium bg-[linear-gradient(to_right,#304DF5_50%,#9016F4_100%)] text-white hover:opacity-90"> 
+                    Download PDF
+                </button>
+            </div>
+
+            <div class="mt-5">
+                <div class="relative md:w-[500px] md:selection:h-[700px] h-[500px] bg-white rounded-lg shadow-lg overflow-hidden flex items-center justify-center">
+                    <img id="mainImage" src="Joseph Peters LOR.jpg" class="w-full h-full object-contain transition-all duration-300">
+                    <button onclick="prevImage()" class="absolute left-2 bg-black/40 hover:bg-black/70 text-white p-2">
+                    &#8592;
+                    </button>
+                    <button onclick="nextImage()" class="absolute right-2 bg-black/40 hover:bg-black/70 text-white p-2">
+                    &#8594;
+                    </button>
+                </div>
+
+                <div id="thumbnails" class="flex flex-row-reverse gap-3 my-6 overflow-x-auto items-center justify-center">
+                    <img src="Joseph Peters LOR.jpg" class="w-20 h-28 object-cover cursor-pointer border-2 border-transparent hover:border-blue-500 rounded" onclick="selectImage(0)">
+                    <img src="HackBAC 2025 Incubator program Certificates.jpg" class="w-20 h-28 object-cover cursor-pointer border-2 border-transparent hover:border-blue-500 rounded" onclick="selectImage(1)">
+                </div>
             </div>
         </div>
     </section>
     
-    <section>
+    <section id="about">
         <div class="lg:px-28 px-4 py-10 flex gap-y-5 justify-between flex-col md:gap-y-16">
             <div class="lg:w-[50rem]">
                 <h2 class="text-[33px] font-medium leading-10">
@@ -133,24 +159,33 @@
                 </div>
                 <div class="md:w-1/3 shadow-[inset_0px_3.33px_20.42px_0px_#1650F51F] bg-[#F7F7F7] md:p-6 p-3 rounded-xl flex justify-center items-center">
                     <div class="flex justify-center items-center gap-x-2 gap-y-10 flex-wrap text-[#1F1F1F]">
-                        <div class="bg-white space-y-2 p-4 rounded-2xl text-[16.6px] font-base md:w-[130px] h-32 flex items-center justify-center w-[40%] text-center shadow-soft"><h3>2025 Hackathon Winner</h3>
+                        <div class="bg-white space-y-2 p-4 rounded-2xl text-[16.6px] font-base md:w-[130px] h-32 flex flex-col items-center justify-center w-[40%] text-center shadow-soft">
+                            <h3 class="leading-[1.3rem]">2025 Hackathon Winner</h3>
+                            <img src="certificate-check-svgrepo-com.svg" class="w-8" alt="">
                         </div>
-                        <div class="bg-white space-y-2 p-4 rounded-2xl text-[16.6px] font-base md:w-[130px] h-32 flex items-center justify-center w-[40%] text-center shadow-soft"><h3>Robotics Competition Win</h3></div>
-                        <div class="bg-white space-y-2 p-4 rounded-2xl text-[16.6px] font-base md:w-[130px] h-32 flex items-center justify-center w-[40%] text-center shadow-soft"><h3>College Java Cert</h3></div>
-                        <div class="bg-white space-y-2 p-4 rounded-2xl text-[16.6px] font-base md:w-[130px] h-32 flex items-center justify-center w-[40%] text-center shadow-soft"><h3>2023 Hackaton win</h3></div>
+                        <div class="bg-white space-y-2 p-4 rounded-2xl text-[16.6px] font-base md:w-[130px] h-32 flex flex-col items-center justify-center w-[40%] text-center shadow-soft">
+                            <h3 class="font-base leading-[1.3rem]">Robotics Competition Win</h3>
+                            <img src="icons8-checkmark.svg" class="w-8" alt="">
+                        </div>
+                        <div class="bg-white space-y-2 p-4 rounded-2xl flex-col text-[16.6px] font-base md:w-[130px] h-32 flex items-center justify-center w-[40%] text-center shadow-soft"><h3 class="leading-[1.3rem]">College Java Cert</h3>
+                            <img src="rocket-svgrepo-com (1).svg" class="w-8" alt="">
+                        </div>
+                        <div class="bg-white space-y-2 p-4 flex-col rounded-2xl text-[16.6px] font-base md:w-[130px] h-32 flex items-center justify-center w-[40%] text-center shadow-soft"><h3 class="leading-[1.3rem]">2023 Hackaton win</h3>
+                            <img src="flag-svgrepo-com.svg" class="w-8" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section>
+    <section id="projects">
         <div class="lg:px-28 px-4 py-10 flex flex-col lg:flex-row justify-between w-full">
             <p class="text-[#6C7179] text-[16.6px] font-medium">Projects</p>
             <h3 class="md:text-[30px] text-[23px] md:leading-10 font-medium lg:w-[55%]">A selection of projects demonstrating <span class="text-[#7430F7]">technical expertise, innovation,</span> and commitment to <span class="text-[#7430F7]"> social impact</span></h3>
         </div>
         <div>
-            <div class="relative w-full overflow-x-auto scrollbar-hide snap-x snap-mandatory flex gap-4 p-4">
+            <div class="relative w-full overflow-x-auto scrollbar-hide snap-x snap-mandatory flex gap-4 p-4 mb-5">
                 <div class="snap-start flex-shrink-0 bg-[#F7F7F7] group hover:bg-[#111111] transition-all hover:scale-y-105 px-2 rounded-xl flex flex-col p-2 gap-y-2 md:w-[36%] w-[70%] lg:w-[28%] hover:shadow-softglow">
                     <div class="bg-white group-hover:bg-[#7430F7] flex justify-between p-2 rounded-xl items-center">
                         <h2 class="text-[16.6px] font-medium group-hover:text-white">Discover U</h2>
@@ -249,7 +284,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="activities">
         <div class="lg:px-28 px-2 py-10 flex justify-between flex-col gap-y-4 my-10">
             <div class="flex flex-col-reverse lg:flex-row justify-between md:items-center w-full">
                 <h2 class="text-[30px] text-[#111111] font-medium">Extracurricular Activities</h2>
@@ -310,7 +345,7 @@
         </div>
     </section>
 
-    <article class="lg:my-10">
+    <article class="lg:my-10" id="skills">
         <div class="lg:px-28 px-4 py-10 flex justify-between flex-col gap-y-4">
             <div class="flex justify-between items-center w-full">
                 <h2 class="text-[30px] text-[#111111] font-medium">My Skills</h2>
@@ -352,7 +387,7 @@
         </div>
     </article>
 
-    <section class="bg-[url('img.jpg')] h-fit">
+    <section class="bg-[url('img.jpg')] h-fit" id="internships">
         <div class="px-4 lg:px-28 py-24 flex justify-between flex-col gap-y-14">
             <div class="w-full flex flex-col md:flex-row justify-between">
                 <p class="text-[#6C7179] text-[16.6px] font-medium">Internship</p>
@@ -360,7 +395,7 @@
                     <h3 class="text-[30px] leading-10 font-medium">Internships, Research & Pre-College Programs</h3>
                     <p class="text-[21px]">Exploring innovation through hands-on learning and real-world impact</p>
                     <div class="space-y-12 flex flex-col mt-10">
-                        <div class="relative p-[1.4px] md:w-[70%] rounded-3xl bg-[linear-gradient(180deg,#7430F7_0%,#0052F6_100%)]">
+                        <div class="relative p-[1.4px] md:w-[70%] w-[80%] rounded-3xl bg-[linear-gradient(180deg,#7430F7_0%,#0052F6_100%)] hover:scale-105 transition-all hover:shadow-softglow hover:rotate-2">
                             <div class="bg-[#111111] rounded-3xl px-6 py-4 space-y-4">
                                 <div class="flex justify-between items-center">
                                     <p class="rounded-full w-[33px] h-[33px] bg-[linear-gradient(90deg,#7430F7_0%,#0052F6_100%)] text-white p-4 flex items-center justify-center text-[20px] font-medium">1</p>
@@ -370,7 +405,7 @@
                                 <p class="text-[13.3px] text-[#AFAFAF] font-base">Conducted a comprehensive research study titled "DiscoverU: The Impact of Gamified, AI Supported Career Counselling on Student Career Alignment." The study involved high school juniors across three public schools, comparing gamified career counselling with traditional methods over a fou...Read More</p>
                             </div>
                         </div>
-                        <div class="relative p-[1.4px] md:w-[80%] ml-auto rounded-3xl bg-[linear-gradient(180deg,#7430F7_0%,#0052F6_100%)]">
+                        <div class="relative p-[1.4px] md:w-[80%] w-[80%] ml-auto rounded-3xl bg-[linear-gradient(180deg,#7430F7_0%,#0052F6_100%)] hover:scale-105 transition-all hover:shadow-softglow hover:-rotate-2">
                             <div class="bg-[#111111] rounded-3xl px-6 py-4 space-y-4">
                                 <div class="flex justify-between items-center">
                                     <p class="rounded-full w-[33px] h-[33px] bg-[linear-gradient(90deg,#7430F7_0%,#0052F6_100%)] text-white p-4 flex items-center justify-center text-[20px] font-medium">2</p>
@@ -381,7 +416,7 @@
                                 <img src="t2.png" alt="" class="rounded-md w-32">
                             </div>
                         </div>
-                        <div class="relative p-[1.4px] md:w-[70%] rounded-3xl bg-[linear-gradient(180deg,#7430F7_0%,#0052F6_100%)]">
+                        <div class="relative p-[1.4px] md:w-[70%] w-[80%] rounded-3xl bg-[linear-gradient(180deg,#7430F7_0%,#0052F6_100%)] hover:scale-105 transition-all hover:shadow-softglow hover:rotate-2">
                             <div class="bg-[#111111] rounded-3xl px-6 py-4 space-y-4">
                                 <div class="flex justify-between items-center">
                                     <p class="rounded-full w-[33px] h-[33px] bg-[linear-gradient(90deg,#7430F7_0%,#0052F6_100%)] text-white p-4 flex items-center justify-center text-[20px] font-medium">3</p>
@@ -397,15 +432,13 @@
         </div>
     </section>
 
-    
-
-    <section>
+    <section id="interest" class="h-fit">
         <div class="lg:px-28 px-2 py-10 flex flex-col md:flex-row md:gap-x-4 gap-y-6 justify-between">
             <div class="md:w-1/2">
                 <div class="flex flex-col gap-y-1 leading-10">
                     <p class="text-[#6C7179] text-[16.6px] font-medium">Unique Interest</p>
                     <h2 class="text-[30px] text-[#111111] font-semibold">Exploring the interests that guide my mission to <span class="bg-[linear-gradient(to_right,#304DF5_75%,#9016F4_100%)] bg-clip-text text-transparent">build meaningful</span>, <span class="bg-[linear-gradient(to_right,#304DF5_75%,#9016F4_100%)] bg-clip-text text-transparent"> inclusive technology</span>.</h2>
-                    <button class="bg-black text-white px-4 shadow-b-md rounded-xl w-28 mt-4 shadow-[13.33px_13.33px_18.86px_-0.83px_#00000033,5.25px_5.25px_7.42px_-0.67px_#0000001C,2.36px_2.36px_3.34px_-0.5px_#00000014,1.08px_1.08px_1.52px_-0.33px_#0000000F,0.4px_0.4px_0.56px_-0.17px_#0000000D]">Email Me</button>
+                    <button class="bg-black text-white px-4 shadow-b-md rounded-xl w-28 mt-4 shadow-[13.33px_13.33px_18.86px_-0.83px_#00000033,5.25px_5.25px_7.42px_-0.67px_#0000001C,2.36px_2.36px_3.34px_-0.5px_#00000014,1.08px_1.08px_1.52px_-0.33px_#0000000F,0.4px_0.4px_0.56px_-0.17px_#0000000D]"><a href="mailto:jposeph626@gmail.com">Email Me</a></button>
                 </div>
             </div>
             <div class="md:w-1/2 shadow-[inset_0px_3.33px_20.42px_0px_#1650F51F] bg-[#F7F7F7] p-6 rounded-xl">
@@ -491,7 +524,7 @@
                         Let's Build Something Meaningful Together
                     </h2>
                     <div class="flex md:w-[60%] mt-6 space-x-2">
-                        <button class="bg-white w-[40%] text-[#7430F7] py-2 text-[13px] font-medium px-4 rounded-xl inline-flex items-center justify-center gap-x-2">Email Me <span><i class="fa-regular fa-envelope"></i></span></button>
+                        <button class="bg-white w-[40%] text-[#7430F7] py-2 text-[13px] font-medium px-4 rounded-xl inline-flex items-center justify-center gap-x-2"><a href="mailto:jposeph626@gmail.com">Email Me</a><span><i class="fa-regular fa-envelope"></i></span></button>
                         <button class="border-2 w-[60%] md:w-[40%] border-white text-[#fff] py-2 text-[13px] font-base px-4 rounded-xl inline-flex items-center justify-center gap-x-2">Download Resume <span><i class="fa-solid fa-download"></i></span></button>
                     </div>
                 </div>
@@ -503,30 +536,30 @@
                         <nav>
                             <ul class="flex flex-col text-base">
                                 <li>
-                                    <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">About</a>
+                                    <a href="#" class="hover:text-[#304DF5] text-[12.5px] font-medium">About</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">Projects</a>
+                                    <a href="#" class="hover:text-[#304DF5] text-[12.5px] font-medium">Projects</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">Internships</a>
+                                    <a href="#" class="hover:text-[#304DF5] text-[12.5px] font-medium">Internships</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">Skills</a>
+                                    <a href="#" class="hover:text-[#304DF5] text-[12.5px] font-medium">Skills</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">Activities</a>
+                                    <a href="#" class="hover:text-[#304DF5] text-[12.5px] font-medium">Activities</a>
                                 </li>
                                 <li>
-                                    <a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">Interest</a>
+                                    <a href="#" class="hover:text-[#304DF5] text-[12.5px] font-medium">Interest</a>
                                 </li>
                             </ul>
                         </nav>
                     </div>
                     <div>
                         <ul class="flex flex-col text-base">
-                            <li><a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">Github</a></li>
-                            <li><a href="#" class="hover:text-blue-600 text-[12.5px] font-medium">LinkedIn</a></li>
+                            <li><a href="#" class="hover:text-[#304DF5] text-[12.5px] font-medium">Github</a></li>
+                            <li><a href="#" class="hover:text-[#304DF5] text-[12.5px] font-medium">LinkedIn</a></li>
                         </ul>
                     </div>
                 </div>
@@ -580,5 +613,42 @@
         elem.setAttribute('aria-hidden', 'true');
       }
     });
+    
+
+    function openPDFs() {
+    const pdfs = [
+      'Joseph Peters.pdf'
+    ];
+
+    pdfs.forEach((pdf, i) => {
+      setTimeout(() => window.open(pdf, '_blank'), i * 600);
+    });
+  }
+
+  </script>
+
+  <script>
+    const images = [
+      "Joseph Peters LOR.jpg",
+      "HackBAC 2025 Incubator program Certificates.jpg"
+    ];
+
+    let current = 0;
+    const mainImage = document.getElementById("mainImage");
+
+    function selectImage(index) {
+      current = index;
+      mainImage.src = images[current];
+    }
+
+    function nextImage() {
+      current = (current + 1) % images.length;
+      mainImage.src = images[current];
+    }
+
+    function prevImage() {
+      current = (current - 1 + images.length) % images.length;
+      mainImage.src = images[current];
+    }
   </script>
 </html>

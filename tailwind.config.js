@@ -11,7 +11,7 @@ module.exports = {
 
       fontFamily: {
         'instrument': ['"Instrument Sans"', 'sans-serif'],
-        'sans': ['"DM Sans"', 'sans-serif'],
+        'sans': ['Archivo', 'sans-serif'],
       },
     },
   },
